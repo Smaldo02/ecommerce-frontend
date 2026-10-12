@@ -1,0 +1,116 @@
+.products-header {
+  background-color: var(--color-quaternary);
+  border-bottom: 4px solid var(--color-accent);
+  padding: var(--spacing-xl);
+}
+
+.product-section-title h2 {
+  font-size: var(--font-size-3xl);
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+
+
+.products-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-xl);
+  padding: var(--spacing-xl);
+  background-color: var(--color-bg-alt);
+  min-height: 60vh;
+}
+
+.products-sidebar {
+  width: 260px;
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.filter-group {
+  padding: var(--spacing-lg) var(--spacing-lg) var(--spacing-md);
+
+  & + .filter-group {
+    border-top: 1px solid var(--color-border);
+  }
+}
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+  cursor: pointer;
+
+  h3 {
+    font-size: var(--font-size-base);
+    font-weight: 700;
+    color: var(--color-accent);
+  }
+
+  i {
+    font-size: var(--font-size-sm);
+    color: var(--color-accent);
+  }
+}
+
+.filter-divider {
+  border: none;
+  border-top: 1px solid var(--color-border);
+  margin: 0 0 var(--spacing-md);
+}
+
+.filter-options {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  li label {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    font-size: var(--font-size-sm);
+    color: var(--color-text);
+    cursor: pointer;
+
+    &:hover {
+      color: var(--color-secondary);
+    }
+  }
+
+  input[type="radio"] {
+    accent-color: var(--color-secondary);
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+  }
+}
+
+
+
+.products-content {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-lg);
+  align-content: flex-start;
+}
+
+@media (max-width: 768px) {
+  .products-sidebar {
+    width: 200px;
+  }
+}
+
+@media (max-width: 640px) {
+  .products-layout {
+    flex-direction: column;
+  }
+
+  .products-sidebar {
+    width: 100%;
+  }
+}

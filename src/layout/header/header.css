@@ -1,0 +1,102 @@
+header {
+  background-color: var(--color-secondary);
+  padding: var(--spacing-sm) var(--spacing-xl);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xl);
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.logo-header {
+  width: 100px;
+}
+
+header h1 {
+  font-size: var(--font-size-2xl);
+  color: var(--color-bg);
+}
+
+.title-span {
+  color: var(--color-accent);
+}
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: var(--spacing-sm);
+  font-size: var(--font-size-sm);
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: var(--color-bg);
+  font-weight: bold;
+  transition: color 0.2s ease-in;
+  &:hover {
+    color: var(--color-accent);
+  }
+}
+
+.nav-login {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--color-bg);
+}
+
+.buttom-cart {
+  color: var(--color-text);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: var(--font-size-lg);
+  cursor: pointer;
+  transition:
+    background-color var(--transition),
+    color var(--transition);
+
+  &:hover {
+    background-color: var(--color-bg);
+    color: var(--color-accent);
+  }
+}
+
+.buttom-login {
+  background-color: var(--color-accent);
+  color: var(--color-text);
+  border: none;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-sm);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color var(--transition);
+
+  &:hover {
+    background-color: var(--color-accent-dark);
+  }
+}

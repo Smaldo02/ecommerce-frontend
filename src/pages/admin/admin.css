@@ -1,0 +1,184 @@
+.adm-section {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-xl);
+  padding: var(--spacing-xl);
+}
+
+.adm-section h2 {
+  font-size: var(--font-size-2xl);
+  color: var(--color-secondary);
+  font-weight: 700;
+}
+
+.tb-products {
+  overflow-x: auto;
+}
+
+.table-colums {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--font-size-sm);
+}
+
+.table-colums th,
+.table-colums td {
+  border: 1px solid var(--color-border);
+  padding: 10px 14px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.table-colums thead th {
+  background-color: var(--color-secondary);
+  color: var(--color-bg);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.table-colums tbody tr:nth-child(even) {
+  background-color: var(--color-bg-alt);
+}
+
+.table-colums img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  display: block;
+}
+
+.table-colums button {
+  padding: 4px 10px;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-sm);
+  cursor: pointer;
+  margin-right: 4px;
+}
+
+.fr-products {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.fr-products h2 {
+  margin-bottom: var(--spacing-md);
+}
+
+.products-charge {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  width: 100%;
+  
+}
+
+.form-group-adm {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
+.form-group-adm:empty {
+  display: none;
+}
+
+.form-group-adm label {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.form-group-adm input,
+.form-group-adm textarea,
+.form-group-adm select {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 8px 10px;
+  font-size: var(--font-size-sm);
+  font-family: var(--font-primary);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+.form-group-adm textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.btn-adm-submit {
+  background-color: var(--color-secondary);
+  color: var(--color-bg);
+  border: none;
+  padding: 10px var(--spacing-lg);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.btn-adm-edit {
+  background-color: var(--color-accent-dark);
+  color: var(--color-bg);
+  border: none;
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-adm-delete {
+  background-color: var(--color-danger);
+  color: var(--color-bg);
+  border: none;
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.adm-form-actions {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.btn-adm-cancel {
+  background-color: var(--color-text-light);
+  color: var(--color-bg);
+  border: none;
+  padding: 10px var(--spacing-lg);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.adm-section .field-error {
+  color: var(--color-danger);
+  font-size: var(--font-size-sm);
+}
+
+.fr-products,
+.tb-products {
+  min-width: 0;
+}
+
+.tb-products {
+  flex: 1;
+}
+
+@media (max-width: 992px) {
+  .adm-section {
+    flex-direction: column;
+    padding: var(--spacing-md);
+  }
+}

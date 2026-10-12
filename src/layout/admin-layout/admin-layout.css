@@ -1,0 +1,44 @@
+.adm-header {
+  padding: var(--spacing-xl) var(--spacing-xl) 0;
+}
+
+.adm-header h1 {
+  font-size: var(--font-size-3xl);
+  color: var(--color-secondary);
+  font-weight: 700;
+  margin-bottom: var(--spacing-md);
+}
+
+.adm-tabs {
+  display: flex;
+  justify-content: flex-start;
+  gap: var(--spacing-sm);
+  border-bottom: 2px solid var(--color-border);
+}
+
+.adm-tab {
+  padding: var(--spacing-sm) var(--spacing-lg);
+  color: var(--color-text-light);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+  transition:
+    color var(--transition),
+    border-color var(--transition);
+}
+
+.adm-tab:hover {
+  color: var(--color-secondary);
+}
+
+.adm-tab.active {
+  color: var(--color-secondary);
+  border-bottom-color: var(--color-accent);
+}
+
+@media (max-width: 992px) {
+  .adm-header {
+    padding: var(--spacing-md) var(--spacing-md) 0;
+  }
+}
